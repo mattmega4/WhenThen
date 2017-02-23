@@ -147,6 +147,7 @@
 				1D3822671E5FA7A3008D5D2C /* Resources */,
 				BDA00DC36145100C1ECF3BAA /* [CP] Embed Pods Frameworks */,
 				C0EBEB289136F4D2BED1564A /* [CP] Copy Pods Resources */,
+				1D5FE3E71E5FAA6300B97C60 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -221,6 +222,19 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
+		};
+		1D5FE3E71E5FAA6300B97C60 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "GOOGLE_APP_ID= 1:1082990595152:ios:a94d5c364b3c3415\n\n\"${PODS_ROOT}\"/FirebaseCrash/upload-sym \"${SRCROOT}\"/CrashReportingKey/ServiceAccount.json\n";
 		};
 		BDA00DC36145100C1ECF3BAA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
